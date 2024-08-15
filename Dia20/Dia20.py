@@ -2,7 +2,7 @@ from turtle import Screen
 from cobra import Cobra
 import time
 
-
+#arquivo principal
 screen = Screen()
 
 screen.setup(600, 600)
