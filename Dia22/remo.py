@@ -1,0 +1,41 @@
+from turtle import Turtle
+
+
+
+posicoes_inicias_player = [(-350,0),(-350,20),(-350,40),(-350,60),(-350,80)]
+class Remo(Turtle):
+    def __init__(self):
+        super().__init__()
+        self.segmentos = []
+        self.criar_remo()
+        self.head = self.segmentos[0]
+        self.tail = self.segmentos[-1]
+        self.direcao = 270
+
+    def criar_remo(self):
+        for posicao in posicoes_inicias_player:
+            self.adicionar_remo(posicao)
+
+    def adicionar_remo(self,posicao):
+        t = Turtle("square")
+        t.color("white")
+        t.penup()
+        t.goto(posicao)
+        self.segmentos.append(t)
+
+    def ir_para_baixo(self):
+        for i in range(len(self.segmentos) - 1, 0, -1):
+            new_x = self.segmentos[i - 1].xcor()
+            new_y = self.segmentos[i - 1].ycor()
+            self.segmentos[i].goto(new_x, new_y)
+        self.head.setheading(270)
+        self.head.forward(20)
+
+    def ir_para_cima(self):
+        for i in range(len(self.segmentos) - 1, 0, -1):
+            new_x = self.segmentos[i - 1].xcor()
+            new_y = self.segmentos[i - 1].ycor()
+            self.segmentos[i].goto(new_x, new_y)
+        self.head.setheading(90)
+        self.head.forward(20)
+
