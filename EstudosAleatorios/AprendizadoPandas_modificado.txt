@@ -1,0 +1,11 @@
+Nome/idade/altura/sexo/profissao
+Guilherme/27/1.82/M/Programador
+Cassiane/22/1.57/F/Diretora
+Filipe/28/1.60/M/Programador
+Joao/27/1.80/M/Programador
+Vitor/28/1.83/M/Programador 
+Gabriela/29/1.58/F/Gerente De Loja
+Juliana/42/1.59/F/Professora
+Luciana/23/1.67/F/Enfermeira
+Steve/32/1.90/M/Sargento
+Amanda/25/1.60/F/Medica
